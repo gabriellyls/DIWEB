@@ -15,8 +15,8 @@
 
 /* tema Dark */
 :root,
-:root[data-theme='dark'] { 
-    
+:root[data-theme='dark'] {
+
     --cor-fundo: #111217;
     --cor-texto-padrao: #dfe0e6;
 
@@ -30,7 +30,7 @@
     --cor-hover: #dfe0e6;
     --cor--menu: #7b7b7b;
 
-    --cor-link: #dfe0e6; 
+    --cor-link: #dfe0e6;
     --cor-icone: #dfe0e6;
     --icone-hover: #7b7b7b;
 
@@ -45,7 +45,7 @@
 :root[data-theme='light'] {
 
     --cor-fundo: #dfe0e6;
-    --cor-texto-padrao:  #111217;
+    --cor-texto-padrao: #111217;
 
     --cor-borda: #111217;
 
@@ -56,7 +56,7 @@
     --cor-hover: #111217;
     --cor--menu: #7b7b7b;
 
-    --cor-link: #dfe0e6; 
+    --cor-link: #dfe0e6;
     --cor-icone: #111217;
     --icone-hover: #7b7b7b;
 
@@ -68,6 +68,9 @@
 
 }
 
+html[data-theme='dark'] .logo {
+    filter: invert(1);
+}
 
 /* Reset do navegador */
 * {
@@ -75,8 +78,9 @@
     /* margem */
     padding: 0;
     /* preenchimento */
-/*     list-style: none; */
+    /*     list-style: none; */
     box-sizing: border-box;
+
 }
 
 body {
@@ -107,13 +111,17 @@ h1 {
     font-family: var(--titulo-h1);
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 0px 16px;
 }
 
 b {
     font-weight: 400;
 }
 
-p, span, li {
+p,
+span,
+li {
     font-size: 16px;
 }
 
@@ -132,8 +140,13 @@ Class = ( . ) ponto */
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px 1px;
+    padding: 5px 16px;
     z-index: 2;
+}
+
+.header-logo .logo {
+    width: 50px;
+    height: 40px;
 }
 
 .trocar-tema {
@@ -287,7 +300,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.projetos-container { 
+.projetos-container {
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -311,7 +324,7 @@ h2 {
     box-shadow: 10px 4px 25px rgba(196, 196, 196, 0.452);
 }
 
-.card-title { 
+.card-title {
     font-size: 32px;
     color: var(--cor-subtitulo);
     font-weight: 100;
@@ -326,7 +339,7 @@ h2 {
 
 .card-lista {
     font-family: var(--texto);
-   /*  list-style: disc; */
+    /*  list-style: disc; */
     margin-bottom: 50px;
 }
 
@@ -343,25 +356,25 @@ h2 {
 }
 
 .card-button,
-.card-descricao { 
+.card-descricao {
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
 }
 
-.card-button .btn { 
+.card-button .btn {
     padding: 8px 20px;
     margin-top: 15px;
 }
 
-.card-button .btn span { 
+.card-button .btn span {
     color: var(--cor-btn);
     font-family: var(--texto);
     font-size: 20px;
 }
 
 .card-button .btn i:hover,
-.card-button .btn span:hover { 
+.card-button .btn span:hover {
     color: var(--cor--menu);
 }
 
@@ -376,7 +389,8 @@ h2 {
     gap: 20px;
 }
 
-.sobre-content1, .sobre-content2 {
+.sobre-content1,
+.sobre-content2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -392,6 +406,7 @@ h2 {
     border-radius: 50%;
     border: 8px solid var(--cor-borda);
 }
+
 .sobre-descricao {
     display: flex;
     flex-direction: column;
@@ -400,7 +415,6 @@ h2 {
 }
 
 .sobre-icons
-
 /*  Responsivo  */
 
 
@@ -410,11 +424,13 @@ h2 {
         font-size: 48px;
         margin-bottom: 25px;
     }
+
     h2 {
         font-size: 32px;
         margin-bottom: 25px;
     }
-} 
+}
+
 /* Fim 576 */
 
 
@@ -463,7 +479,7 @@ h2 {
         font-size: 40px;
         margin-bottom: 30px;
     }
-} 
+}
 
 /* fim 768px */
 
@@ -476,6 +492,7 @@ h2 {
         font-size: 60px;
     }
 }
+
 /* Fim comprimento até 768px */
 
 
@@ -484,26 +501,33 @@ h2 {
 @media (min-width: 992px) {
 
     .projeto-card {
-        flex-direction: row; 
+        flex-direction: row;
     }
-    .card-reverse { 
+
+    .card-reverse {
         flex-direction: row-reverse;
     }
+
     .img-card {
         width: 55%;
     }
+
     h1 {
         font-size: 80px;
         margin-bottom: 40px;
     }
+
     h2 {
         font-size: 48px;
         margin-bottom: 35px;
     }
+
     .sobre {
         gap: 80px;
     }
-    .sobre-content1, .sobre-content2 {
+
+    .sobre-content1,
+    .sobre-content2 {
         display: grid;
         grid-template-columns: 30% 70%;
         justify-content: flex-start;
@@ -523,13 +547,18 @@ h2 {
     .main-content .btn {
         width: auto;
     }
-    p, span, li {
+
+    p,
+    span,
+    li {
         font-size: 20px;
     }
+
     h1 {
         font-size: 96px;
         margin-bottom: 50px;
     }
+
     h2 {
         font-size: 56px;
         margin-bottom: 40px;
@@ -555,8 +584,9 @@ h2 {
         font-size: 64px;
         margin-bottom: 50px;
     }
-    .projetos, 
-    .sobre { 
+
+    .projetos,
+    .sobre {
         padding: 160px 240px 64px;
     }
 }
