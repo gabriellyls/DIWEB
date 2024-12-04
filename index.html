@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> DIWEB 2405 | Matheus </title>
+    <title> DIWEB 2405 | Gustavo Feriani </title>
+    <!-- Fav Icons -->
+    <link rel="shortcut icon" href="img/Frame 1.png" type="image/x-icon">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/Frame 1.png" type="image/x-icon">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -57,7 +59,7 @@
         <!-- LOGO -->
         <div class="header-logo">
             <a href="#home">
-                <img src="img/Ms.png" class="logo">
+                <img src="img/Ms.png" alt="" class="logo">
             </a>
         </div>
 
@@ -103,7 +105,7 @@
         </ul> <!-- fim UL -->
 
     </nav> <!-- fim mobile -->
- 
+
     <main id="home">
 
         <div class="main-content">
@@ -150,7 +152,10 @@
 
         <div class="video">
 
-            <iframe src="https://www.youtube.com/embed/_2o9eT1s6OY?si=WIlEnHofd6TkW_aL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/EAjWeHn01Z8" title="Eu sendo coração mole e o Google me entende"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
 
@@ -173,15 +178,19 @@
                     <p class="card-descricao"> Ecommerce de Livros </p>
 
                     <ul class="card-lista">
+
                         <li class="card-item">
+                            <i class="bi bi-arrow-right-short icone-seta"></i>
                             Listagem de Favoritos;
                         </li>
 
                         <li class="card-item">
+                            <i class="bi bi-arrow-right-short icone-seta"></i>
                             Carrinho de Comprar / Formas de Pagamento.
                         </li>
 
                         <li class="card-item">
+                            <i class="bi bi-arrow-right-short icone-seta"></i>
                             Filtragem por Preço e Categoria;
                         </li>
                     </ul>
@@ -263,11 +272,58 @@
             </div> <!-- Fim Projeto 1 -->
 
 
+            <!-- Projeto 1 -->
+            <div class="projeto-card">
 
+                <img src="img/projetos/portfolio.PNG" alt="" class="img-card">
 
+                <div class="card-body">
+
+                    <h3 class="card-title"> Portfolio Pessoal </h3>
+                    <p class="card-descricao"> A história por trás do meu Portfolio. </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            Postagens relacionadas em Destaque;
+                        </li>
+
+                        <li class="card-item">
+                            Seção dos Projetos;
+                        </li>
+
+                        <li class="card-item">
+                            Biografia do Autor;
+                        </li>
+                    </ul>
+
+                    <!-- botao online ou Repositorio -->
+                    <div class="card-button">
+                        <!-- botao online -->
+                        <button class="btn btn-primary">
+                            <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books"
+                                target="_blank">
+
+                                <span> Prévia </span>
+                                <i class="bi bi-arrow-up-right"> </i>
+                            </a>
+                        </button>
+
+                        <!-- botao Repositorio -->
+                        <button class="btn">
+                            <a href="https://github.com/guuhferiani/teste-josis" target="_blank">
+                                <i class="bi bi-github"> </i>
+                                <span>Repositório</span>
+                            </a>
+                        </button>
+
+                    </div> <!-- Fim  card-button -->
+
+                </div> <!-- Fim  card body -->
+
+            </div> <!-- Fim Projeto Card 1 -->
 
         </div> <!-- Fim projetos container -->
-
 
     </section> <!-- fim projetos -->
 
@@ -357,7 +413,7 @@
                     <h3> Experiências </h3>
 
                     <h4> Instrutor </h4>
-                    <span> Senai</span>
+                    <span> Senai </span>
 
                     <p> Instrutor de treinamentos para Dev Front-End e cursos de informática.</p>
 
@@ -381,39 +437,95 @@
                             <i class="bi bi-caret-down-fill"> </i>
                         </button>
 
+                        <div class="accordion-body">
+                            <p> Digital Innovation One. 68H. </p>
+                            <p> Desenvolvimento Front End com Angular e desenvolver habilidades práticas para construir
+                                aplicações web modernas e responsivas, enquanto treina recursos de Inteligência
+                                Artificial para se tornar um desenvolvedor completo. </p>
+                        </div>
+
                     </div> <!-- fim curso 1 -->
 
-                    <div class="accordion-item active">
 
-                        <button class="accordion-header start">
+                    <div class="accordion-item">
+
+                        <button class="accordion-header">
+                            <span> Google Cloud Engineer </span>
+                            <i class="bi bi-caret-down-fill"> </i>
+                        </button>
+
+                        <div class="accordion-body">
+                            <p> Senai. 40H. </p>
+
+                            <p> Com a certificação Associate Cloud Engineer, é possível implantar aplicativos, monitorar
+                                operações e gerenciar soluções corporativas. Também é possível usar o Console do Google
+                                Cloud e a interface de linha de comando na realização de tarefas comuns baseadas na
+                                plataforma para a manutenção de uma ou mais soluções implantadas que usam os serviços
+                                gerenciados pelo Google ou autogerenciados no Google Cloud.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Curso 3 -->
+                    <div class="accordion-item">
+
+                        <button class="accordion-header end">
                             <span> Google Cloud Computing Foundations </span>
                             <i class="bi bi-caret-down-fill"> </i>
                         </button>
 
-                    </div>
-
-                    <div class="accordion-item active">
-
-                        <button class="accordion-header start">
-                            <span> Dev Front-End com Angular </span>
-                            <i class="bi bi-caret-down-fill"> </i>
-                        </button>
+                        <div class="accordion-body end">
+                            <p> Senai. 40H. </p>
+                            <p> Este curso fornece uma visão geral da computação em nuvem, maneiras de usar o Google Cloud e diferentes opções de computação. </p>
+                        </div> 
 
                     </div>
 
+                </div> <!-- Fim accordion -->
 
+            </div> <!-- Fim Coluna 2 -->
 
-                </div>
-
-
-            </div>
-
-        </div> <!-- fim conteudo 1 -->
+        </div> <!-- fim conteudo 2 -->
 
     </section>
 
     <section id="contato" class="contato">
+        <h2>Contato</h2>
 
+        <p>Estou disponivel para orientações e novas conexões. Entre em contato comigo por email e conecte-se através das minhas redes sociais.</p>
+        
+        <ul class="menu menu-social">
+ 
+            <li>
+                <a href="https://github.com/LordTwz/" target="_blank">
+                    <i class="menu-icon bi bi-github">
+                        <span>Github</span>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/thewzz.p/" target="_blank">
+                    <i class="menu-icon bi bi-instagram">
+                        <span>Instagram</span>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.wa.me/+5511912379225" target="_blank">
+                    <i class="menu-icon bi bi-whatsapp">
+                        <span>Whatsapp</span>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto: matheusperucio5@gmail.com" class="menu-link">
+                    <i class="menu-icon bi bi-envelope"></i>
+                    <span>matheusperucio5@gmail.com</span>
+                </a>
+            </li>
+
+        </ul>
     </section>
 
     <script src="js/script.js"> </script>
